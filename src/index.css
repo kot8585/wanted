@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Rosarivo&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-text: #2c2c2c;
+  --color-active: #393939;
+  --color-disabled: #868686;
+  --color-border: #c7c7c7;
+  --color-text-bright: #f9f9f9;
+}
 
 body {
   margin: 0;
@@ -9,9 +18,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 17px;
+  color: var(--color-text);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80%;
+  max-width: 500px;
+  border-radius: 1rem;
+  background-color: #fdfdfd;
+  padding: 18px;
+  gap: 14px;
 }

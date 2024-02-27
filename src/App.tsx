@@ -1,3 +1,12 @@
+import AddTodo from "./components/List/AddTodo";
+import TodoList from "./components/List/TodoList";
+
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <header className="text-3xl text-center font-Rosarivo">TO-DO LIST</header>
+      <AddTodo />
+      <TodoList />
+    </>
+  );
 }
