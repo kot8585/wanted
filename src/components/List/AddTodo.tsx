@@ -1,9 +1,10 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { decrement, increment } from "../../store/todoListSlice";
+import { useAppSelector } from "../../hook/hooks";
 
 export default function AddTodo() {
-  const count = useSelector((state) => state.counter.value);
+  const count = useAppSelector((state) => state.counter.value);
   const dispatch = useDispatch();
 
   return (
